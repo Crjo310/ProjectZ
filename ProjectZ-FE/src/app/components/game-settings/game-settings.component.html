@@ -1,0 +1,25 @@
+<div class="game-settings-grid content-global">
+    <div class="headline-global">
+        Erstelle deine eigene Lobby
+    </div>
+    <div class="content">
+        <mat-form-field appearance="outline">
+            <mat-label>Lobbyname</mat-label>
+            <input type="text" matInput (change)="onLobbyNameChange($event)" >
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Mit wem möchtest du spielen?</mat-label>
+            <mat-select (selectionChange)="onMaxPlayerChange($event)">
+                <mat-option *ngFor="let number of [1,2,3,4]" [value]="number">
+                    {{number}} Trottel
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="lobby-button">
+        <button mat-raised-button color="primary" [disabled]="!lobbyname || maxPlayer == 0" (click)="createLobby()">
+            <mat-icon color="accent">play_arrow</mat-icon>
+            Lobby erstellen
+        </button>
+    </div>
+</div>

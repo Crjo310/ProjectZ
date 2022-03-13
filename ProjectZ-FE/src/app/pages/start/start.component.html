@@ -1,0 +1,33 @@
+<div class="start-grid">
+    <div class="content-grid content-global">
+        <div class="setting-grid">
+            <div class="avatar-img-div">
+                <div class="avatar-circle" (click)="chooseAvatar()">
+                    <img [src]="avatarBaseUrl+avatarId+'.png'">
+                </div> 
+            </div>
+            <div>
+                <div class="info-text">
+                    Avatar & Nickname wählen
+                </div>
+                <form class="name-form">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Nickname</mat-label>
+                        <input type="text" matInput (change)="onKeyDownEvent($event)" >
+                    </mat-form-field>
+                </form>
+            </div>
+        </div>
+        <div class="center-button"> 
+            <button class="start-button" [disabled]="!username" (click)="processOK()" mat-raised-button color="primary">
+                <mat-icon color="accent">play_arrow</mat-icon>
+                Rein da!
+            </button>
+        </div>
+    </div>
+    <div class="content-grid content-global">
+        <div class="headline headline-global">
+            Willkommen auf meiner coolen Webseite
+        </div>
+    </div>
+</div>

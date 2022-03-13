@@ -1,0 +1,7 @@
+.inner-content{
+    height: calc(90% - 100px);
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 50px;
+}

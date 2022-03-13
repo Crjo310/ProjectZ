@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.content-global{
+    background-color: rgba(246, 250, 246, 0.2);
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.headline-global{
+    font-size: 25px;
+    color: #69f0ae;
+    margin: 50px;
+    text-align: center;
+}
+
+.headline-global:first-child{
+    margin-top: 25px;
+}

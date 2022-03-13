@@ -1,0 +1,40 @@
+<div class="lobby-list-grid content-global">
+    <div class="headline-global">
+        Offene Lobbies
+    </div>
+    <div class="content">
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef> Lobbyname </th>
+              <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+          
+            <ng-container matColumnDef="playerNumber">
+              <th mat-header-cell *matHeaderCellDef>Spielerzahl</th>
+              <td mat-cell *matCellDef="let element"> {{element.players.length}}/{{element.maxPlayer}}</td>
+            </ng-container>
+            
+            <ng-container matColumnDef="join">
+              <th mat-header-cell *matHeaderCellDef>
+                <div class="reload-button">
+                  <button mat-mini-fab color="accent" (click)="reloadLobbyList()">
+                    <mat-icon>refresh</mat-icon>
+                  </button>
+              </div>
+              </th>
+              <td mat-cell *matCellDef="let element">
+                <div class="join-button">
+                    <button mat-mini-fab color="accent" (click)="joinLobby(element.id)">
+                      <mat-icon>forward</mat-icon>
+                    </button>
+                </div>
+               </td>
+            </ng-container>
+          
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+        
+    </div>
+</div>

@@ -1,0 +1,12 @@
+.toolbar{
+    height: 10%;
+}
+
+.logo-img-div {
+    height: 100%; 
+}
+
+.logo-img-div > img{
+    width: 100%; 
+    height: 100%;
+}

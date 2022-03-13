@@ -1,0 +1,7 @@
+<mat-grid-list cols="5" rowHeight="1.5:1">
+    <mat-grid-tile *ngFor="let tile of numberArray">
+        <div (click)="clickAvatar(tile)">
+            <img [src]="'/assets/images/avatar/Avatar'+ tile + '.png'">
+        </div> 
+    </mat-grid-tile>
+  </mat-grid-list>
