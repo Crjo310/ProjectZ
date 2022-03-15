@@ -3,9 +3,10 @@ import * as SockJS from 'sockjs-client';
 import { Lobby } from '../model/models';
 import { Client } from 'stompjs';
 import { LobbyService } from './lobby-service';
+import { environment } from 'src/environments/environment';
 
 export class WebSocketAPI {
-    webSocketEndPointLobby: string = 'http://localhost:8080/ws';
+    webSocketEndPointLobby: string = environment.wsURL +'ws';
     topic: string = "/lobbyTopic/";
     stompClient: any;
 
@@ -53,7 +54,7 @@ export class WebSocketAPI {
                 console.log("wait for connection...")
                 this.waitForSocketConnection(socket, callback);
             }
-        }, 5);
+        }, 20);
 }
 
     onLobbyReceived(lobby: Lobby): void {

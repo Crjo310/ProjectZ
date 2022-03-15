@@ -21,7 +21,7 @@ public class LobbyService {
     @Autowired
     PlayerService playerService;
     
-    public Lobby createLobby(String lobbyName, Integer maxPlayer, String adminId) {
+    public Lobby createLobby(String lobbyName, Integer maxPlayer, String adminId, Integer gameType) {
         Lobby lobby = new Lobby();
         String id = UUID.randomUUID().toString();
         lobby.setId(id);
@@ -29,6 +29,7 @@ public class LobbyService {
         lobby.setAdmin(PlayerStorage.getInstance().getPlayers().get(adminId));
         lobby.setMaxPlayer(maxPlayer);
         lobby.setPlayers(new ArrayList<Player>());
+        lobby.setGameType(gameType);
         LobbyStorage.getInstance().addLobby(lobby);
         return lobby;
     }

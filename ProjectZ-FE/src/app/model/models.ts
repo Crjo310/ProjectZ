@@ -4,6 +4,7 @@ export interface Lobby {
     maxPlayer: number;
     players: Player[];
     admin: Player;
+    gameType: number;
 }
 
 export interface Player {

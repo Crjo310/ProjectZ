@@ -9,6 +9,8 @@ public class Lobby {
     private Integer maxPlayer;
     private Player admin;
     private List<Player> players;
+    private Integer gameType;
+
 
     public String getId() {
         return id;
@@ -50,6 +52,12 @@ public class Lobby {
         this.players = players;
     }
 
-    
+    public Integer getGameType() {
+        return gameType;
+    }
+
+    public void setGameType(Integer gameType) {
+        this.gameType = gameType;
+    }
     
 }

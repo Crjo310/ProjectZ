@@ -19,7 +19,7 @@ public class PlayerController {
     PlayerService playerService;
 
     @PostMapping("create")
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin
     public Player createLobby(@RequestBody PlayerRequestBody body) {
         System.out.println("Player created");
         return playerService.createPlayer(body.getName(),body.getAvatarId());

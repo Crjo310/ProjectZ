@@ -1,6 +1,7 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Lobby, Player } from 'src/app/model/models';
+import { HttpService } from 'src/app/service/http-service';
 import { LobbyService } from 'src/app/service/lobby-service';
 import { WebSocketAPI } from 'src/app/service/WebSockerAPI';
 import { urls } from 'src/app/util/util';
@@ -18,7 +19,7 @@ export class LobbyComponent implements OnInit {
   webSocketAPI!: WebSocketAPI;
   routeSub: any;
 
-  constructor(private cdr: ChangeDetectorRef, private route: ActivatedRoute, private lobbyService: LobbyService) { }
+  constructor(private cdr: ChangeDetectorRef, private route: ActivatedRoute, private lobbyService: LobbyService, private httpService: HttpService) { }
 
   ngOnInit(): void {
     this.lobbyService.lobby$.subscribe((lobby) => this.lobby = lobby);
@@ -26,6 +27,12 @@ export class LobbyComponent implements OnInit {
       this.webSocketAPI = new WebSocketAPI(this.lobbyService);
       this.webSocketAPI._connectLobbySocket(params['lobbyid']);
       this.webSocketAPI._sendJoinMessage(params['lobbyid']);
+      this.httpService.getRequest("lobby/get/"+params['lobbyid']).subscribe(
+        (result) => {
+          this.lobby = <Lobby>result;
+          this.cdr.detectChanges();
+        }
+      );
     })
   }
 

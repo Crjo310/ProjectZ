@@ -15,9 +15,17 @@
                 </mat-option>
             </mat-select>
         </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Wähle einen Spielmodus</mat-label>
+            <mat-select (selectionChange)="onGameTypeChange($event)">
+                <mat-option *ngFor="let mode of selectOptions.listOfGameModes" [value]="mode.value">
+                    {{mode.label}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
     </div>
     <div class="lobby-button">
-        <button mat-raised-button color="primary" [disabled]="!lobbyname || maxPlayer == 0" (click)="createLobby()">
+        <button mat-raised-button color="primary" [disabled]="!lobbyname || maxPlayer == 0 || gameType == 0" (click)="createLobby()">
             <mat-icon color="accent">play_arrow</mat-icon>
             Lobby erstellen
         </button>

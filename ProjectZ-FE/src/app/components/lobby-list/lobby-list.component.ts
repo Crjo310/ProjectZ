@@ -1,6 +1,7 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Lobby } from 'src/app/model/models';
+import { SelectOptionService } from 'src/app/util/SelectOptionService';
 import { HttpService } from '../../service/http-service';
 
 @Component({
@@ -12,11 +13,11 @@ import { HttpService } from '../../service/http-service';
 export class LobbyListComponent implements OnInit {
 
   
-  displayedColumns: string[] = ['name', 'playerNumber', 'join'];
+  displayedColumns: string[] = ['name', 'gameMode', 'playerNumber', 'join'];
   dataSource: Lobby[] = [];
 
   
-  constructor( private httpService: HttpService, private cdr: ChangeDetectorRef, private router: Router) { }
+  constructor( private httpService: HttpService, private cdr: ChangeDetectorRef, private router: Router, public selectOptions: SelectOptionService) { }
 
   ngOnInit(): void {
     this.reloadLobbyList();
@@ -37,7 +38,10 @@ export class LobbyListComponent implements OnInit {
       error: (e) => window.alert(e.error.message),
       complete: () => {}
     })
-    
+  }
+
+  getGameType(value: number) {
+    return this.selectOptions.listOfGameModes.find(element => element.value == value)?.label;
   }
 
 }
