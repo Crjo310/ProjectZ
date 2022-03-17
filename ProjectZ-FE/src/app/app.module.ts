@@ -22,6 +22,18 @@ import { LobbyComponent } from './pages/lobby/lobby.component';
 import { AvatarPickerComponent } from './components/avatar-picker/avatar-picker.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { JoinGameComponent } from './components/join-game/join-game.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { GameComponent } from './pages/game/game.component';
+import { GameFreestyleComponent } from './components/game-freestyle/game-freestyle.component';
+import { GameNerdquizComponent } from './components/game-nerdquiz/game-nerdquiz.component';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { PlayerAreaComponent } from './components/player-area/player-area.component';
+import { FormsModule } from '@angular/forms';
+
+
+
 
 
 
@@ -34,7 +46,12 @@ import { MatGridListModule } from '@angular/material/grid-list';
     LobbyListComponent,
     HeaderComponent,
     LobbyComponent,
-    AvatarPickerComponent
+    AvatarPickerComponent,
+    JoinGameComponent,
+    GameComponent,
+    GameFreestyleComponent,
+    GameNerdquizComponent,
+    PlayerAreaComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +67,12 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatToolbarModule,
     HttpClientModule,
     MatDialogModule,
-    MatGridListModule
+    MatGridListModule,
+    MatProgressSpinnerModule,
+    MatDividerModule,
+    MatTooltipModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

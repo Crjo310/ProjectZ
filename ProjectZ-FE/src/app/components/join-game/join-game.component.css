@@ -1,0 +1,11 @@
+.box{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.join-button{
+    text-align: center;
+}

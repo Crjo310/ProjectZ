@@ -1,0 +1,61 @@
+.buzzer-div{
+    text-align: center;
+}
+
+.name-div{
+    text-align: center;
+    color: #69f0ae;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.main-div{
+    border: #69f0ae;
+}
+
+.input-div{
+    text-align: center;
+    height: 20px;
+}
+
+.points-div{
+    text-align: center;
+    color: #69f0ae;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.avatar-circle > img {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.avatar-circle-green {
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(105, 240, 174);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.avatar-circle-red {
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(228, 12, 12);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.avatar-circle-grey {
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(134, 134, 134);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}

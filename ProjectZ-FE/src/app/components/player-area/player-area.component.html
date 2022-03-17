@@ -1,0 +1,24 @@
+<div class="main-div">
+    <div class="name-div">
+        {{player.user.name}}
+    </div>
+    <div class="buzzer-div">
+            <div [ngClass]="isBuzzerActive() ? 'avatar-circle-red' : game?.buzzerEnabled ?  'avatar-circle-green' : 'avatar-circle-grey'" (click)="pressBuzzer()">
+                <img [src]="avatarBaseUrl+player.user.avatarId+'.png'">
+            </div> 
+    </div>
+    <div class="points-div">
+        {{player.points}}
+    </div>
+    <div *ngIf="isCorrectPlayer() || isAdmin()" class="input-div">
+        <input value="{{player.answer}}" (keyup.enter)="onEnter($event)" type="text" ngMode matInput autocomplete="off">
+    </div>
+    <div *ngIf="isAdmin()" class="input-div">
+        <button *ngIf="isAdmin" mat-mini-fab color="accent" (click)="minus()">
+            <mat-icon>expand_more</mat-icon>
+        </button>
+        <button *ngIf="isAdmin" mat-mini-fab color="accent" (click)="plus()">
+            <mat-icon>expand_less</mat-icon>
+        </button>
+    </div>
+</div>

@@ -1,9 +1,11 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
-import { Lobby, Player } from 'src/app/model/models';
+import { JoinGameComponent } from 'src/app/components/join-game/join-game.component';
+import { Lobby, User } from 'src/app/model/models';
 import { HttpService } from 'src/app/service/http-service';
 import { LobbyService } from 'src/app/service/lobby-service';
-import { WebSocketAPI } from 'src/app/service/WebSockerAPI';
+import { WebSocketAPILobby } from 'src/app/service/WebSocketAPILobby';
 import { urls } from 'src/app/util/util';
 
 @Component({
@@ -14,20 +16,27 @@ import { urls } from 'src/app/util/util';
 export class LobbyComponent implements OnInit {
 
   displayedColumns: string[] = ['avatar', 'name', 'kick'];
-  dataSource: Player[] = [];
+  dataSource: User[] = [];
   lobby!: Lobby;
-  webSocketAPI!: WebSocketAPI;
+  webSocketAPI!: WebSocketAPILobby;
   routeSub: any;
+  lobbyId!: string;
 
-  constructor(private cdr: ChangeDetectorRef, private route: ActivatedRoute, private lobbyService: LobbyService, private httpService: HttpService) { }
+  constructor(private cdr: ChangeDetectorRef, private route: ActivatedRoute, private lobbyService: LobbyService, private httpService: HttpService, public dialog: MatDialog) { }
 
   ngOnInit(): void {
-    this.lobbyService.lobby$.subscribe((lobby) => this.lobby = lobby);
+    this.lobbyService.lobby$.subscribe((lobby) => {
+      this.lobby = lobby;
+      if (this.lobby.started == true) {
+        this.openJoinGame();
+      }
+    });
     this.route.params.subscribe( params => {
-      this.webSocketAPI = new WebSocketAPI(this.lobbyService);
-      this.webSocketAPI._connectLobbySocket(params['lobbyid']);
-      this.webSocketAPI._sendJoinMessage(params['lobbyid']);
-      this.httpService.getRequest("lobby/get/"+params['lobbyid']).subscribe(
+      this.lobbyId = params['lobbyid'];
+      this.webSocketAPI = new WebSocketAPILobby(this.lobbyService);
+      this.webSocketAPI._connectLobbySocket(this.lobbyId);
+      this.webSocketAPI._sendRefreshMessage(this.lobbyId);
+      this.httpService.getRequest("lobby/get/"+this.lobbyId).subscribe(
         (result) => {
           this.lobby = <Lobby>result;
           this.cdr.detectChanges();
@@ -53,6 +62,21 @@ export class LobbyComponent implements OnInit {
 
   counter(i: number) {
     return new Array(i);
+  }
+
+  startGame() {
+    this.httpService.getRequest('lobby/start/'+this.lobbyId).subscribe(
+      () => {this.webSocketAPI._sendRefreshMessage(this.lobbyId);}
+    );
+  }
+
+  openJoinGame(): void{
+    const dialogRef = this.dialog.open(JoinGameComponent, {
+      disableClose: true,
+      width: '300px',
+      height: '300px'
+    });
+    dialogRef.componentInstance.id = this.lobbyId;
   }
 
   ngOnDestroy() {

@@ -47,7 +47,7 @@
         </div>
         <div>
             <div *ngIf="isAdmin()" class="center-button">
-                <button class="start-button" [disabled]="!isLobbyFull()" mat-raised-button color="primary">
+                <button class="start-button" [disabled]="!isLobbyFull()" (click)="startGame()" mat-raised-button color="primary">
                     <mat-icon color="accent">play_arrow</mat-icon>
                     Let's go!
                 </button>

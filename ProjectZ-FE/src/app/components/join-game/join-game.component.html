@@ -1,0 +1,12 @@
+<div class="box">
+    <mat-progress-spinner *ngIf="progressbarValue != 101"
+          color="primary"
+          mode="determinate"
+          [diameter]="200"
+          [value]="progressbarValue ">
+      </mat-progress-spinner>
+      <p *ngIf="progressbarValue == 101">Ja klar, lass dir Zeit!</p>
+</div>
+<div class="join-button">
+    <button mat-raised-button [mat-dialog-close]="true" color="accent" (click)="joinGame()">Wir gehen rein!</button>
+</div>

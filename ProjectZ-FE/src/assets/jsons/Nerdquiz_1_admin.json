@@ -1,0 +1,155 @@
+{
+    "name": "Nerdquiz#1",
+    "categories": [
+        {
+            "head": "Lukas Lieblinge",
+            "questions": [
+                {
+                    "question": "Wie heißt der Schwertkämpfer in Ruffys Piratenbande bei One Piece?",
+                    "answer": "Lorenor Zorro.",
+                    "points": 100
+                },
+                {
+                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
+                    "answer": "Holz und Lehm.",
+                    "points": 200
+                },
+                {
+                    "question": "Wie heißt die erste Erweiterung von AOE2?",
+                    "answer": "The Conquerors.",
+                    "points": 300
+                },
+                {
+                    "question": "Welche Fantasy-Saga beginnt mit den Worten 'Der Mann in Schwarz floh durch die Wüste und der Revolvermann folgte ihm'?",
+                    "answer": "Der Dunkle Turm.",
+                    "points": 500
+                },
+                {
+                    "question": "Mit welchem extremen Begriff wird beim Schach ein Entscheidungspiel, das bei Punktgleichstand normalerweise mit verkürzter Zeit gespielt wird, bezeichnet?",
+                    "answer": "Armageddon.",
+                    "points": 1000
+                }
+            ]
+        },
+        {
+            "head": "Game of Thrones",
+            "questions": [
+                {
+                    "question": "Ist Daniel dumm?",
+                    "answer": "Das muss jeder für sich selbst entscheiden.",
+                    "points": 100
+                },
+                {
+                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
+                    "answer": "Holz und Lehm.",
+                    "points": 200
+                },
+                {
+                    "question": "Wie heißt der Schwertkämpfer in Ruffys Piratenbande bei One Piece?",
+                    "answer": "Lorenor Zorro.",
+                    "points": 300
+                },
+                {
+                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
+                    "answer": "Holz und Lehm.",
+                    "points": 500
+                },
+                {
+                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
+                    "answer": "Holz und Lehm.",
+                    "points": 1000
+                }
+            ]
+        },
+        {
+            "head": "Blizzard",
+            "questions": [
+                {
+                    "question": "Wie heißt der Schwertkämpfer in Ruffys Piratenbande bei One Piece?",
+                    "answer": "Lorenor Zorro.",
+                    "points": 100
+                },
+                {
+                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
+                    "answer": "Holz und Lehm.",
+                    "points": 200
+                },
+                {
+                    "question": "Wie heißt der Schwertkämpfer in Ruffys Piratenbande bei One Piece?",
+                    "answer": "Lorenor Zorro.",
+                    "points": 300
+                },
+                {
+                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
+                    "answer": "Holz und Lehm.",
+                    "points": 500
+                },
+                {
+                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
+                    "answer": "Holz und Lehm.",
+                    "points": 1000
+                }
+            ]
+        },
+        {
+            "head": "Memes & Viral Videos",
+            "questions": [
+                {
+                    "question": "Wie heißt der Schwertkämpfer in Ruffys Piratenbande bei One Piece?",
+                    "answer": "Lorenor Zorro.",
+                    "points": 100
+                },
+                {
+                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
+                    "answer": "Holz und Lehm.",
+                    "points": 200
+                },
+                {
+                    "question": "Wie heißt der Schwertkämpfer in Ruffys Piratenbande bei One Piece?",
+                    "answer": "Lorenor Zorro.",
+                    "points": 300
+                },
+                {
+                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
+                    "answer": "Holz und Lehm.",
+                    "points": 500
+                },
+                {
+                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
+                    "answer": "Holz und Lehm.",
+                    "points": 1000
+                }
+            ]
+        },
+        {
+            "head": "Eins nach dem anderen",
+            "questions": [
+                {
+                    "question": "Wie heißt der Schwertkämpfer in Ruffys Piratenbande bei One Piece?",
+                    "answer": "Lorenor Zorro.",
+                    "points": 100
+                },
+                {
+                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
+                    "answer": "Holz und Lehm.",
+                    "points": 200
+                },
+                {
+                    "question": "Wie heißt der Schwertkämpfer in Ruffys Piratenbande bei One Piece?",
+                    "answer": "Lorenor Zorro.",
+                    "points": 300
+                },
+                {
+                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
+                    "answer": "Holz und Lehm.",
+                    "points": 500
+                },
+                {
+                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
+                    "answer": "Holz und Lehm.",
+                    "points": 1000
+                }
+            ]
+        }
+    ]
+}

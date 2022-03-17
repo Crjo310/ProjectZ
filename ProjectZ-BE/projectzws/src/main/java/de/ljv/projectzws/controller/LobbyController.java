@@ -33,7 +33,7 @@ public class LobbyController {
     @CrossOrigin
     public Lobby[] getAllLobbies() {
         System.out.println("Lobbies taken");
-        return lobbyService.getLobbies();
+        return lobbyService.getOpenLobbies();
     }
 
     @GetMapping("get/{id}")
@@ -51,6 +51,12 @@ public class LobbyController {
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.FORBIDDEN).body(e);
         }
+    }
+
+    @GetMapping("start/{id}")
+    @CrossOrigin
+    public Lobby startGame(@PathVariable(value="id") String id){
+        return lobbyService.startGame(id);
     }
 }
 

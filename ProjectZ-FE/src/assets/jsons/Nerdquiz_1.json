@@ -1,0 +1,155 @@
+{
+    "name": "Nerdquiz#1",
+    "categories": [
+        {
+            "head": "Lukas Lieblinge",
+            "questions": [
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 100
+                },
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 200
+                },
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 300
+                },
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 500
+                },
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 1000
+                }
+            ]
+        },
+        {
+            "head": "Game of Thrones",
+            "questions": [
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 100
+                },
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 200
+                },
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 300
+                },
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 500
+                },
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 1000
+                }
+            ]
+        },
+        {
+            "head": "Blizzard",
+            "questions": [
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 100
+                },
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 200
+                },
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 300
+                },
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 500
+                },
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 1000
+                }
+            ]
+        },
+        {
+            "head": "Memes & Viral Videos",
+            "questions": [
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 100
+                },
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 200
+                },
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 300
+                },
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 500
+                },
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 1000
+                }
+            ]
+        },
+        {
+            "head": "Eins nach dem anderen",
+            "questions": [
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 100
+                },
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 200
+                },
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 300
+                },
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 500
+                },
+                {
+                    "question": "",
+                    "answer": "",
+                    "points": 1000
+                }
+            ]
+        }
+    ]
+}

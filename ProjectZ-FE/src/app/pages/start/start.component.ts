@@ -2,7 +2,7 @@ import { Component, OnInit, ɵpublishDefaultGlobalUtils } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { AvatarPickerComponent } from 'src/app/components/avatar-picker/avatar-picker.component';
-import { Player } from 'src/app/model/models';
+import { User } from 'src/app/model/models';
 import { HttpService } from 'src/app/service/http-service';
 import { urls } from 'src/app/util/util';
 
@@ -23,10 +23,10 @@ export class StartComponent implements OnInit {
   }
 
   processOK() {
-    this.httpService.postRequest('player/create',{name: this.username, avatarId: this.avatarId}).subscribe({
+    this.httpService.postRequest('user/create',{name: this.username, avatarId: this.avatarId}).subscribe({
       next: (r) => {        
-        localStorage.setItem('userId', (<Player>r).id);
-        localStorage.setItem('userName', (<Player>r).name);
+        localStorage.setItem('userId', (<User>r).id);
+        localStorage.setItem('userName', (<User>r).name);
         this.router.navigate(['/newgame']);
       },
       error: (e) => window.alert(e.error.message),

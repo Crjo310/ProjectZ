@@ -1,28 +1,28 @@
 package de.ljv.projectzws.model;
 
 public class Player {
-    
-    String id;
-    String name;
-    String avatarId;
-    
-    public String getId() {
-        return id;
+
+    private User user;
+    private Integer points;
+    private String answer;
+
+    public User getUser() {
+        return user;
     }
-    public void setId(String id) {
-        this.id = id;
+    public void setUser(User user) {
+        this.user = user;
     }
-    public String getName() {
-        return name;
+    public Integer getPoints() {
+        return points;
     }
-    public void setName(String name) {
-        this.name = name;
+    public void setPoints(Integer points) {
+        this.points = points;
     }
-    public String getAvatarId() {
-        return avatarId;
+    public String getAnswer() {
+        return answer;
     }
-    public void setAvatarId(String avatarId) {
-        this.avatarId = avatarId;
+    public void setAnswer(String answer) {
+        this.answer = answer;
     }
     
 }

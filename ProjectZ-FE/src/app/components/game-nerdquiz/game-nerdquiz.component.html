@@ -1,0 +1,42 @@
+<div class="nerdquiz-grid">
+    <div class="admin-grid">
+        <div class="question-board">
+            <mat-grid-list class="head-row" cols="5" rowHeight="50px">
+                <mat-grid-tile *ngFor="let category of categories; index as i"
+                    [style.background]=cols[i]?.color>
+                  {{category?.head}}
+                </mat-grid-tile> 
+            </mat-grid-list>
+            <mat-grid-list class="point-rows" cols="5" rowHeight="50px">
+                <mat-grid-tile *ngFor="let question of questions; index as i"
+                    (click)="showQuestion(question)"
+                    #tooltip="matTooltip"
+                    matTooltip="{{question.question}}  {{question.answer}}"
+                    [style.background]=cols[question.category]?.color>
+                  {{question.points}}
+                </mat-grid-tile> 
+            </mat-grid-list>
+        </div>
+        <div class="text-grid">
+            <div class="text-box">
+                {{game?.currentQuestion}}
+            </div>            
+            <div class="buttons">
+                <button *ngIf="isAdmin()" mat-mini-fab color="accent" (click)="showAnswerSwitch()">
+                    <mat-icon>remove_red_eye</mat-icon>
+                </button>
+                <button *ngIf="isAdmin()" mat-mini-fab color="accent" (click)="buzzerLockSwitch()">
+                    <mat-icon *ngIf="game.buzzerEnabled === false">lock</mat-icon>
+                    <mat-icon *ngIf="game.buzzerEnabled === true">lock_open</mat-icon>
+                </button>
+            </div>
+            <div *ngIf="game?.showAnswer" class="text-box">
+                {{game?.currentAnswer}}
+            </div>
+        </div>
+    </div>
+    <div class="player-grid">
+        <app-player-area [game]="game" [player]="player" [style.width.%]="100/game.players.length" class="player-area" *ngFor="let player of game.players">
+        </app-player-area>
+    </div>
+</div>

@@ -1,0 +1,4 @@
+<div class="content-global game">
+    <app-game-freestyle *ngIf="game?.gameType==1"></app-game-freestyle>
+    <app-game-nerdquiz  [game]="game" *ngIf="game?.gameType==2"></app-game-nerdquiz>
+</div>

@@ -5,7 +5,7 @@ import { Client } from 'stompjs';
 import { LobbyService } from './lobby-service';
 import { environment } from 'src/environments/environment';
 
-export class WebSocketAPI {
+export class WebSocketAPILobby {
     webSocketEndPointLobby: string = environment.wsURL +'ws';
     topic: string = "/lobbyTopic/";
     stompClient: any;
@@ -35,10 +35,10 @@ export class WebSocketAPI {
         console.log("errorCallBack -> " + error)
     }
 
-    _sendJoinMessage(lobbyId: string) {
+    _sendRefreshMessage(lobbyId: string) {
         this.waitForSocketConnection((<Client>this.stompClient).ws, () => {
             console.log("calling join api via web socket");
-            this.stompClient.send("/app/joinLobby/" + lobbyId);
+            this.stompClient.send("/app/refreshLobby/" + lobbyId);
         });
     }
 

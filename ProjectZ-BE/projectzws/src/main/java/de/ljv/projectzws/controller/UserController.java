@@ -7,27 +7,27 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import de.ljv.projectzws.model.Player;
-import de.ljv.projectzws.service.PlayerService;
+import de.ljv.projectzws.model.User;
+import de.ljv.projectzws.service.UserService;
 
 
 @RestController
-@RequestMapping("/player")
-public class PlayerController {
+@RequestMapping("/user")
+public class UserController {
 
     @Autowired
-    PlayerService playerService;
+    UserService userService;
 
     @PostMapping("create")
     @CrossOrigin
-    public Player createLobby(@RequestBody PlayerRequestBody body) {
-        System.out.println("Player created");
-        return playerService.createPlayer(body.getName(),body.getAvatarId());
+    public User createLobby(@RequestBody UserRequestBody body) {
+        System.out.println("User created");
+        return userService.createUser(body.getName(),body.getAvatarId());
     }
     
 }
 
-class PlayerRequestBody {
+class UserRequestBody {
     private String name;
     private String avatarId;
 

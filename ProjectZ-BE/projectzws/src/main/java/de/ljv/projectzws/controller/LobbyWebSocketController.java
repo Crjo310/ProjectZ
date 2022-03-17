@@ -16,10 +16,10 @@ public class LobbyWebSocketController {
   @Autowired
   LobbyService lobbyService;
 
-  @MessageMapping("/joinLobby/{id}")
+  @MessageMapping("/refreshLobby/{id}")
   @SendTo("/lobbyTopic/{id}")
   @CrossOrigin()
-  public Lobby greet(@DestinationVariable String id) throws Exception {
+  public Lobby join(@DestinationVariable String id) throws Exception {
     return lobbyService.getLobby(id);
   }
 
