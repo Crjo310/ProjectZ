@@ -8,7 +8,7 @@
                 </mat-grid-tile> 
             </mat-grid-list>
             <mat-grid-list class="point-rows" cols="5" rowHeight="50px">
-                <mat-grid-tile *ngFor="let question of questions; index as i"
+                <mat-grid-tile [ngClass]="game?.doneQuestions?.includes(question.number) ? 'dark' : 'light'" *ngFor="let question of questions; index as i"
                     (click)="showQuestion(question)"
                     #tooltip="matTooltip"
                     matTooltip="{{question.question}}  {{question.answer}}"

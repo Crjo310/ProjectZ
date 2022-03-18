@@ -30,6 +30,7 @@ export interface Game {
     currentQuestion: String;
     currentAnswer: String;
     showAnswer: boolean;
+    doneQuestions: number[];
 }
 
 export interface Quizset {
@@ -47,6 +48,7 @@ export interface Question {
     answer: string;
     points: number;
     category: number;
+    number: number;
 }
 
 export interface Message {

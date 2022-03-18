@@ -85,6 +85,7 @@ public class LobbyService {
         game.setCurrentQuestion("");
         game.setCurrentAnswer("");
         game.setShowAnswer(false);
+        game.setDoneQuestions(new ArrayList<Integer>());
         GameStorage.getInstance().addGame(game);
         return game;
     }

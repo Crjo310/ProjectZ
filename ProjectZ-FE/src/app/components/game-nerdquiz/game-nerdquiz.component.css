@@ -58,3 +58,11 @@ table {
     margin-left: 5px;
     margin-right: 5px;
 }
+
+.light {
+    filter: brightness(100%);
+}
+
+.dark {
+    filter: brightness(50%);
+}

@@ -61,11 +61,12 @@ public class GameWebSocketController {
     return game;
   }
 
-  @MessageMapping("/activeQuestion/{gameId}/{question}/{answer}")
+  @MessageMapping("/activeQuestion/{gameId}/{number}/{question}/{answer}")
   @SendTo("/gameTopic/{gameId}")
   @CrossOrigin()
-  public Game activeQuestion(@DestinationVariable String gameId, @DestinationVariable String question, @DestinationVariable String answer) throws Exception {
+  public Game activeQuestion(@DestinationVariable String gameId, @DestinationVariable Integer number, @DestinationVariable String question, @DestinationVariable String answer) throws Exception {
     Game game = gameService.getGame(gameId);
+    game.getDoneQuestions().add(number);
     game.setCurrentQuestion(question);
     game.setCurrentAnswer(answer);
     game.setShowAnswer(false);

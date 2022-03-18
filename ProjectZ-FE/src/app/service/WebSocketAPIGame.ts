@@ -61,7 +61,7 @@ export class WebSocketAPIGame {
 
     _sendActiveQuestion(gameId: string, question: Question) {
         this.waitForSocketConnection((<Client>this.stompClient).ws, () => {
-            this.stompClient.send("/app/activeQuestion/" + gameId + "/" + question.question + "/" + question.answer);
+            this.stompClient.send("/app/activeQuestion/" + gameId + "/" + question.number + "/" + question.question + "/" + question.answer);
         });
     }
 

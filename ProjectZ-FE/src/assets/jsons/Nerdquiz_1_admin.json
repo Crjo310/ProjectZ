@@ -7,27 +7,32 @@
                 {
                     "question": "Wie heißt der Schwertkämpfer in Ruffys Piratenbande bei One Piece?",
                     "answer": "Lorenor Zorro.",
-                    "points": 100
+                    "points": 100,
+                    "number": 1
                 },
                 {
                     "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
                     "answer": "Holz und Lehm.",
-                    "points": 200
+                    "points": 200,
+                    "number": 2
                 },
                 {
                     "question": "Wie heißt die erste Erweiterung von AOE2?",
                     "answer": "The Conquerors.",
-                    "points": 300
+                    "points": 300,
+                    "number": 3
                 },
                 {
                     "question": "Welche Fantasy-Saga beginnt mit den Worten 'Der Mann in Schwarz floh durch die Wüste und der Revolvermann folgte ihm'?",
                     "answer": "Der Dunkle Turm.",
-                    "points": 500
+                    "points": 500,
+                    "number": 4
                 },
                 {
                     "question": "Mit welchem extremen Begriff wird beim Schach ein Entscheidungspiel, das bei Punktgleichstand normalerweise mit verkürzter Zeit gespielt wird, bezeichnet?",
                     "answer": "Armageddon.",
-                    "points": 1000
+                    "points": 1000,
+                    "number": 5
                 }
             ]
         },
@@ -35,29 +40,34 @@
             "head": "Game of Thrones",
             "questions": [
                 {
-                    "question": "Ist Daniel dumm?",
-                    "answer": "Das muss jeder für sich selbst entscheiden.",
-                    "points": 100
+                    "question": "Wer stürzte sich aus dem Fenster seines Gemachs in den Tod?",
+                    "answer": "Tommen Baratheon.",
+                    "points": 100,
+                    "number": 6
                 },
                 {
-                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
-                    "answer": "Holz und Lehm.",
-                    "points": 200
+                    "question": "Wie starb Renly Baratheon?",
+                    "answer": "Er wurde von einem Schatten getötet, den die rote Priesterin schickte.",
+                    "points": 200,
+                    "number": 7
                 },
                 {
-                    "question": "Wie heißt der Schwertkämpfer in Ruffys Piratenbande bei One Piece?",
-                    "answer": "Lorenor Zorro.",
-                    "points": 300
+                    "question": "(Aufschreiben) Nenne möglichst viele Titel/Beinamen von Daenerys Targaryen?",
+                    "answer": "Siehe GOT-Wiki",
+                    "points": 300,
+                    "number": 8
                 },
                 {
-                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
-                    "answer": "Holz und Lehm.",
-                    "points": 500
+                    "question": "(Aufschreiben) Wer war das erste Opfer der Roten Hochzeit?",
+                    "answer": "Talisa Maegyr",
+                    "points": 500,
+                    "number": 9
                 },
                 {
-                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
-                    "answer": "Holz und Lehm.",
-                    "points": 1000
+                    "question": "Wer war der Ziehvater von Eddard Stark und Robert Baratheon?",
+                    "answer": "Jon Arryn",
+                    "points": 1000,
+                    "number": 10
                 }
             ]
         },
@@ -65,29 +75,34 @@
             "head": "Blizzard",
             "questions": [
                 {
-                    "question": "Wie heißt der Schwertkämpfer in Ruffys Piratenbande bei One Piece?",
-                    "answer": "Lorenor Zorro.",
-                    "points": 100
+                    "question": "Wie heißt die Umsetzung des Hexendoktors aus Diablo bei Hots?",
+                    "answer": "Nazeboo",
+                    "points": 100,
+                    "number": 11
                 },
                 {
-                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
-                    "answer": "Holz und Lehm.",
-                    "points": 200
+                    "question": "Welcher Charakter sagt 'by fire be purged', wenn man ihn bei HS beschwört?",
+                    "answer": "Ragnaros",
+                    "points": 200,
+                    "number": 12
                 },
                 {
-                    "question": "Wie heißt der Schwertkämpfer in Ruffys Piratenbande bei One Piece?",
-                    "answer": "Lorenor Zorro.",
-                    "points": 300
+                    "question": "(Aufschreiben) Welche beiden Instanzen wurden zu Cataclysm überarbeitet und erhielten einen HC-Modus?",
+                    "answer": "Todesmienen und Burg Schattenfang",
+                    "points": 300,
+                    "number": 13
                 },
                 {
-                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
-                    "answer": "Holz und Lehm.",
-                    "points": 500
+                    "question": "(Schätzfrage) Wie viele Haushalten waren aufgrund des Blizzards Nemo im Feb. 2013 im Nordosten der USA ohne Strom und Heizung?",
+                    "answer": "600.000.",
+                    "points": 500,
+                    "number": 14
                 },
                 {
-                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
-                    "answer": "Holz und Lehm.",
-                    "points": 1000
+                    "question": "Wie heißt der Sohn von Cairne Bluthuf?",
+                    "answer": "Baine Bluthuf",
+                    "points": 1000,
+                    "number": 15
                 }
             ]
         },
@@ -95,29 +110,34 @@
             "head": "Memes & Viral Videos",
             "questions": [
                 {
+                    "question": "Wie wird das bekannte, regenbogenfarbene Meme mit dem Gesicht eines damaligen Justin.TV-Mitarbeiters genannt?",
+                    "answer": "Kappa Pride",
+                    "points": 100,
+                    "number": 16
+                },
+                {
+                    "question": "Wie viele Matrazen gibt es laut Patrick Star im Matrazengeschäft, in dem er mit Spongebob ist?",
+                    "answer": "10.",
+                    "points": 200,
+                    "number": 17
+                },
+                {
                     "question": "Wie heißt der Schwertkämpfer in Ruffys Piratenbande bei One Piece?",
                     "answer": "Lorenor Zorro.",
-                    "points": 100
+                    "points": 300,
+                    "number": 18
                 },
                 {
-                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
-                    "answer": "Holz und Lehm.",
-                    "points": 200
+                    "question": "Mit welchem Satz erlangte Danielle Bregoli während einer Talkshow Internet-Berühmtheit?",
+                    "answer": "Cash me outside howbow dah.",
+                    "points": 500,
+                    "number": 19
                 },
                 {
-                    "question": "Wie heißt der Schwertkämpfer in Ruffys Piratenbande bei One Piece?",
-                    "answer": "Lorenor Zorro.",
-                    "points": 300
-                },
-                {
-                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
-                    "answer": "Holz und Lehm.",
-                    "points": 500
-                },
-                {
-                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
-                    "answer": "Holz und Lehm.",
-                    "points": 1000
+                    "question": "Wie heißt die Frau, nach der bei Harry Potter und der Plastikpokal auf dem Campingplatz lauthals gerufen wird?",
+                    "answer": "Helga.",
+                    "points": 1000,
+                    "number": 20
                 }
             ]
         },
@@ -125,29 +145,34 @@
             "head": "Eins nach dem anderen",
             "questions": [
                 {
-                    "question": "Wie heißt der Schwertkämpfer in Ruffys Piratenbande bei One Piece?",
-                    "answer": "Lorenor Zorro.",
-                    "points": 100
+                    "question": "Äetherhauch - Ekelschlund - Mondstaub-Zauberklinge - Vastaya - Heulende Schlucht - Baron Nashor",
+                    "answer": "League of Legends.",
+                    "points": 100,
+                    "number": 21
                 },
                 {
-                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
-                    "answer": "Holz und Lehm.",
-                    "points": 200
+                    "question": "Akela - Winifred - Rama - Kind Louie - Kaa - Mowgli",
+                    "answer": "Dschungelbuch.",
+                    "points": 200,
+                    "number": 22
                 },
                 {
-                    "question": "Wie heißt der Schwertkämpfer in Ruffys Piratenbande bei One Piece?",
-                    "answer": "Lorenor Zorro.",
-                    "points": 300
+                    "question": "Kevin - Trudy - Arthus Hubbs - Tracy McConnell - Stella Zinmann - Lily Aldrin?",
+                    "answer": "How i me your mother.",
+                    "points": 300,
+                    "number": 23
                 },
                 {
-                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
-                    "answer": "Holz und Lehm.",
-                    "points": 500
+                    "question": "Troggles - Sir Tuxford - König Gregor - Tummi - Toadie - Igzorn?",
+                    "answer": "Gummibärenbande.",
+                    "points": 500,
+                    "number": 24
                 },
                 {
-                    "question": "(Aufschreiben) Welche Rohstoffe benötigt man, um bei Siedler von Catan eine Straße zu bauen?",
-                    "answer": "Holz und Lehm.",
-                    "points": 1000
+                    "question": "Sumpfkraut - Der Schläfer - Scavanger - König Rohbar - Innos - Xadras?",
+                    "answer": "Gothic.",
+                    "points": 1000,
+                    "number": 25
                 }
             ]
         }

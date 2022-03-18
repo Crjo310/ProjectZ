@@ -13,6 +13,7 @@ public class Game {
     private String currentQuestion;
     private String currentAnswer;
     private boolean showAnswer;
+    private List<Integer> doneQuestions;
 
     public String getLobbyId() {
         return lobbyId;
@@ -68,5 +69,14 @@ public class Game {
     }
     public void setShowAnswer(boolean showAnswer) {
         this.showAnswer = showAnswer;
+    }
+    
+    public List<Integer> getDoneQuestions() {
+        return doneQuestions;
+    }
+    public void setDoneQuestions(List<Integer> doneQuestions) {
+        this.doneQuestions = doneQuestions;
     }  
+
+    
 }
