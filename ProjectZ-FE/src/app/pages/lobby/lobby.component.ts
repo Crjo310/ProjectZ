@@ -21,10 +21,14 @@ export class LobbyComponent implements OnInit {
   webSocketAPI!: WebSocketAPILobby;
   routeSub: any;
   lobbyId!: string;
+  mobile: boolean = false;
 
   constructor(private cdr: ChangeDetectorRef, private route: ActivatedRoute, private lobbyService: LobbyService, private httpService: HttpService, public dialog: MatDialog) { }
 
   ngOnInit(): void {
+    if (window.screen.width < 769) {
+      this.mobile = true;
+    }
     this.lobbyService.lobby$.subscribe((lobby) => {
       this.lobby = lobby;
       if (this.lobby.started == true) {
@@ -76,6 +80,11 @@ export class LobbyComponent implements OnInit {
       width: '300px',
       height: '300px'
     });
+    let audio = new Audio();
+    audio.src = "../../../assets/audio/game-start.mp3";
+    audio.volume = 0.1;
+    audio.load();
+    audio.play();
     dialogRef.componentInstance.id = this.lobbyId;
   }
 

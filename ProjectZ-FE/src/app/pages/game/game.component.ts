@@ -50,6 +50,13 @@ export class GameComponent implements OnInit {
       )
     });
     this.gameService.game$.subscribe((game) => {
+      if (game.activeBuzzer != "" && game.activeBuzzer != this.game.activeBuzzer){
+        let audio = new Audio();
+        audio.volume = 0.1;
+        audio.src = "../../../assets/audio/buzzer.mp3";
+        audio.load();
+        audio.play();
+      }
       this.game = game;
     });
   }
